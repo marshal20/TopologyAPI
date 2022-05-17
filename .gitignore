@@ -1,6 +1,10 @@
 
+# Visual studio specific
+/.vs
+
 # Dependencies
 /deps
 
 # Build directory
 /build
+/out
