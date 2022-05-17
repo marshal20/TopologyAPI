@@ -19,17 +19,17 @@ void Component::set_id(const std::string& id)
 	m_id = id;
 }
 
-void Component::add_net(const std::string& net_name, const std::string& net_value)
+void Component::add_net(const std::string& net_name, const std::string& net_id)
 {
-	m_netlist[net_name] = net_value;
+	m_netlist[net_name] = net_id;
 }
 
-void Component::set_net(const std::string& net_name, const std::string& net_value)
+void Component::set_net(const std::string& net_id, const std::string& net_value)
 {
-	auto found_pair = m_netlist.find(net_name);
+	auto found_pair = m_netlist.find(net_id);
 	if (found_pair == m_netlist.end())
 	{
-		throw std::runtime_error("No net found with the name \"" + net_name + "\"");
+		throw std::runtime_error("No net found with the id \"" + net_id + "\"");
 	}
 
 	found_pair->second = net_value;
@@ -46,12 +46,12 @@ std::string Component::get_id() const
 	return m_id;
 }
 
-std::string Component::get_net(const std::string& net_name) const
+std::string Component::get_net(const std::string& net_id) const
 {
-	auto found_pair = m_netlist.find(net_name);
+	auto found_pair = m_netlist.find(net_id);
 	if (found_pair == m_netlist.end())
 	{
-		throw std::runtime_error("No net found with the name \"" + net_name + "\"");
+		throw std::runtime_error("No net found with the id \"" + net_id + "\"");
 	}
 
 	return found_pair->second;

@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <top/component.h>
 #include <top/resistor.h>
-#include "top/nmos.h"
+#include <top/nmos.h>
 
 
 TEST(TopologyAPI, Component)

@@ -10,12 +10,12 @@ public:
 	virtual ~Component();
 
 	void set_id(const std::string& id);
-	void add_net(const std::string& net_name, const std::string& net_value); // adds a new net, or sets the value if it already exists
-	void set_net(const std::string& net_name, const std::string& net_value); // sets an already existing net
+	void add_net(const std::string& net_id, const std::string& net_value); // adds a new net, or sets the value if it already exists
+	void set_net(const std::string& net_id, const std::string& net_value); // sets an already existing net
 
 	std::string get_type() const;
 	std::string get_id() const;
-	std::string get_net(const std::string& net_name) const;
+	std::string get_net(const std::string& net_id) const;
 	std::map<std::string, std::string> get_netlist() const;
 
 private:
