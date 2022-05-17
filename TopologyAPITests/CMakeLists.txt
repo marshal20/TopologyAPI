@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.1)
 
 set(SRC 
-		src/components_test.cpp
+		"src/components_test.cpp"
 		)
 
 add_executable(TopologyAPITests ${SRC})
