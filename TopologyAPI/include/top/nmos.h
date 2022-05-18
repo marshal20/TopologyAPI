@@ -9,16 +9,16 @@ public:
 	NMOS(const std::string& id, const ComponentValue& m1, const std::string& drain, const std::string& gate, const std::string& source);
 	virtual ~NMOS();
 
-	void set_m1(const ComponentValue& m1);
+	void set_ml(const ComponentValue& ml);
 	void set_drain_net(const std::string& net_value);
 	void set_gate_net(const std::string& net_value);
 	void set_source_net(const std::string& net_value);
 
-	ComponentValue get_m1() const;
+	ComponentValue get_ml() const;
 	std::string get_drain_net() const;
 	std::string get_gate_net() const;
 	std::string get_source_net() const;
 
 private:
-	ComponentValue m_m1;
+	ComponentValue m_ml;
 };

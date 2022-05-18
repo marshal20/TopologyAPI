@@ -2,7 +2,7 @@
 
 
 Resistor::Resistor(const std::string& id, const ComponentValue& resistance, const std::string& t1, const std::string& t2)
-	: Component("res", id)
+	: Component("resistor", id)
 {
 	m_resistance = resistance;
 	add_net("t1", t1);

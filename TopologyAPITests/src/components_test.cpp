@@ -18,7 +18,7 @@ TEST(TopologyAPI, Resistor)
 {
 	Resistor res = Resistor("id1", { 50, 0, 1e3 }, "v0", "v1");
 
-	EXPECT_EQ(res.get_type(), "res");
+	EXPECT_EQ(res.get_type(), "resistor");
 	EXPECT_EQ(res.get_id(), "id1");
 	EXPECT_DOUBLE_EQ(res.get_resistance().default_value, 50);
 	EXPECT_DOUBLE_EQ(res.get_resistance().minimum, 0);
@@ -33,9 +33,9 @@ TEST(TopologyAPI, NMOS)
 
 	EXPECT_EQ(nmos.get_type(), "nmos");
 	EXPECT_EQ(nmos.get_id(), "id1");
-	EXPECT_DOUBLE_EQ(nmos.get_m1().default_value, 1.5);
-	EXPECT_DOUBLE_EQ(nmos.get_m1().minimum, 1);
-	EXPECT_DOUBLE_EQ(nmos.get_m1().maximum, 2);
+	EXPECT_DOUBLE_EQ(nmos.get_ml().default_value, 1.5);
+	EXPECT_DOUBLE_EQ(nmos.get_ml ().minimum, 1);
+	EXPECT_DOUBLE_EQ(nmos.get_ml().maximum, 2);
 	EXPECT_EQ(nmos.get_drain_net(), "v0");
 	EXPECT_EQ(nmos.get_gate_net(), "v1");
 	EXPECT_EQ(nmos.get_source_net(), "v2");

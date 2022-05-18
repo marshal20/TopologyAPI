@@ -1,0 +1,45 @@
+{
+  "id": "topology_1",
+  "components": [
+    {
+      "type": "resistor",
+      "id": "R1",
+      "resistance": {
+        "default": 50,
+        "min": 0,
+        "max": 150
+      },
+      "netlist": {
+        "t1": "VO",
+        "t2": "GND"
+      }
+    },
+    {
+      "type": "nmos",
+      "id": "M1",
+      "m(l)": {
+        "default": 1.5,
+        "min": 1,
+        "max": 2
+      },
+      "netlist": {
+        "drain": "VDD",
+        "gate": "VIN",
+        "source": "VO"
+      }
+    },
+	{
+      "type": "resistor",
+      "id": "R2",
+      "resistance": {
+        "default": 1.5e6,
+        "min": 0,
+        "max": 1e9
+      },
+      "netlist": {
+        "t1": "VIN",
+        "t2": "GND"
+      }
+    }
+  ]
+}
