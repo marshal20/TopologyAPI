@@ -4,6 +4,9 @@
 A library that provides an API to load topologies from a JSON file to memory,
  query them from memory or save them back to a JSON file.
 
+# Documentations
+[TopologyAPI documentations can be found here!](docs.md)
+
 ## Project Information
 - **Language:** C++
 - **Build System:** CMake
