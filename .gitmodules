@@ -1,0 +1,6 @@
+[submodule "External/googletest"]
+	path = External/googletest
+	url = https://github.com/google/googletest
+[submodule "External/json"]
+	path = External/json
+	url = https://github.com/nlohmann/json

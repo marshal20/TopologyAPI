@@ -10,8 +10,10 @@ A library that provides an API to load topologies from a JSON file to memory,
 ## Project Information
 - **Language:** C++
 - **Build System:** CMake
+- **Package Management:** using GIT submodules
 - **Testing Framework:** [GoogleTest](https://github.com/google/googletest)
-- **JSON Parsing Library** [JSON for Modern C++](https://github.com/nlohmann/json)
+- **JSON Parsing Library** [JSON for Modern C++](https://github.com/nlohmann/json) \
+**Note:** you have to use **git clone --recursive** in order to pull the dependencies
 
 ## Project Structure
 - **TopologyAPI:** The library implements the API to handle topologies.
