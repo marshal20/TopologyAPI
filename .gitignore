@@ -1,4 +1,7 @@
 
+# VSCode
+/.vscode
+
 # Visual studio specific
 /.vs
 
